@@ -1,0 +1,15 @@
+'vernciph' - one-time pad (aka Vernam Cipher) implementation for *NIX-like OS.
+
+Build:
+    make install
+
+Usage:
+Encrypting
+    vernciph -e -k /path/to/input/key/file < /path/to/input/file > /path/to/output/file
+    vernciph -e < /path/to/input/file > /path/to/output/file 2> /path/to/key
+Decrypting
+    vernciph -d -k /path/to/key/file < /path/to/encrypted/file > /path/to/decrypted/file
+
+If key file is not exists it will be created at specified path and data will be readed from /dev/random
+
+xxkfqz <xxkfqz@gmail.com> 2020
