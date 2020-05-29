@@ -73,9 +73,9 @@ void printHelp(void)
             "  -b, --block-size <data-block-size>\n"
             "  -h, --help\n"
             "  -k, --key-file <key>\n\n"
-            "Encrypting\n    vernciph -e -k /path/to/input/key/file < /path/to/input/file > /path/to/output/file\n"
-                        "    vernciph -e < /path/to/input/file > /path/to/output/file 2> /path/to/key\n"
-            "Decrypting\n    vernciph -d -k /path/to/key/file < /path/to/encrypted/file > /path/to/decrypted/file\n"
+            "Encrypting\n    vernciph -k /path/to/input/key/file < /path/to/input/file > /path/to/output/file\n"
+                        "    vernciph < /path/to/input/file > /path/to/output/file 2> /path/to/key\n"
+            "Decrypting\n    vernciph -k /path/to/key/file < /path/to/encrypted/file > /path/to/decrypted/file\n"
             "\nIf key file is not exists it will be created at specified path and data will be readed from /dev/random\n"
             "\nxxkfqz <xxkfqz@gmail.com> 2020\n"
         );
